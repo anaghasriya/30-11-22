@@ -1,0 +1,12 @@
+fuel=12
+other=50
+cphno=input("enter customer phone number:")
+cname=input("enter a customer name:")
+ccharge=input("enter a charge:")
+units=input("enter units:")
+bill=units+fuel+other
+print("customer phone number:",cphno)
+print("customer name:", cname)
+print("customercharges:",ccharge)
+print("enter units",units)
+print("bill amount:",bill)
