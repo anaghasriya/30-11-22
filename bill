@@ -1,0 +1,25 @@
+tissue=200
+drink=190
+chips=100
+cream=520
+book=495
+cphno=input("enter customer phone number:")
+cname=input("enter a customer name:")
+cadd=input("address of customer")
+quant=int(input("quantity"))
+bill=(quant*tissue)+(quant*drink)+(quant*chips)+(quant*cream)+(quant*book)
+if bill>=3000:
+    tax=bill*5/100
+elif bill>=2000:
+    tax=bill*7/100
+elif bill>=1000:
+    tax=bill*10/100
+elif bill>=500:
+    tax=bill*15/100
+else:
+    tax=bill*100
+tax=tax+bill
+print("customer phone number:",cphno)
+print("customer name:", cname)
+print("customer address:",cadd)
+print("bill amount:",bill)
